@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: src_cleansed_amazon_sales_report 
+    columns: 
+      - name: order_id
+        tests: 
+          - unique
+          - not_null
+      - name: courier_status
+        tests:
+          - accepted_values:
+              values: ['Shipped', 
+                      'Unshipped', 
+                      'Cancelled']

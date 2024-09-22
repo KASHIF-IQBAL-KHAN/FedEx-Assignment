@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: fedex
+    schema: raw
+    tables:
+      - name: amazon_sales_report
+        identifier: raw_amazon_sales_report
